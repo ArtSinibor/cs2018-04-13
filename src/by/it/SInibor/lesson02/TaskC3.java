@@ -45,5 +45,5 @@ class TaskC3 {
         double marsf = new BigDecimal(mars).setScale(2, RoundingMode.HALF_UP).doubleValue();
         return marsf;
     }
-    
+
 }
