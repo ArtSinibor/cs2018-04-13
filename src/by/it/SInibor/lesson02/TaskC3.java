@@ -41,7 +41,7 @@ class TaskC3 {
         System.out.println(getWeight(weight));
     }
 
-    public static double getWeight(int weight) {
+    private static double getWeight(int weight) {
         double mars = weight * 3.86 / 9.81;
         return new BigDecimal(mars).setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
