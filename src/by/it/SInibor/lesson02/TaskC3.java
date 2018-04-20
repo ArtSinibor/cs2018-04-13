@@ -40,10 +40,10 @@ class TaskC3 {
         int weight = scan.nextInt();
         System.out.println(getWeight(weight));
     }
-        public static double getWeight (int weight){
-        double mars = weight*3.86/9.81;
-        double marsf = new BigDecimal(mars).setScale(2, RoundingMode.HALF_UP).doubleValue();
-        return marsf;
+
+    private static double getWeight(int weight) {
+        double mars = weight * 3.86 / 9.81;
+        return new BigDecimal(mars).setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
 
 }
