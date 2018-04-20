@@ -29,8 +29,13 @@ public class TaskC2 {
         System.out.println(sumDigitsInNumber(number));
     }
 
-    private static int sumDigitsInNumber(int number) {
-        return number;
+    static int sumDigitsInNumber(int number) {
+        int rez = 0;
+        while (number != 0) {
+            rez = rez + number % 10;
+            number = number / 10;
+        }
+        return rez;
     }
 
 

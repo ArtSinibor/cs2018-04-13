@@ -29,7 +29,7 @@ import java.util.Scanner;
 
 class TaskC1 {
 
-    public static double convertCelsiumToFahrenheit(int temp_C) {
+    static double convertCelsiumToFahrenheit(int temp_C) {
         return (double) (temp_C * 9 / 5 + 32);
     }
 
