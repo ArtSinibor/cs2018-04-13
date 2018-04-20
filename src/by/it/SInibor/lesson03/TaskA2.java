@@ -1,5 +1,7 @@
 package by.it.SInibor.lesson03;
 
+import java.sql.SQLOutput;
+
 /*
 Lesson 03. Task A2. Стихотворение
 
@@ -21,5 +23,12 @@ Lesson 03. Task A2. Стихотворение
 Для автоматической проверки откройте и запустите класс Testing
 */
 class TaskA2 {
-
+    public static void main(String[] args) {
+        String a="Умеют же шутить ребята,";
+        String b="Хоть сказки впору им слагать:";
+        String c="Нужна хорошая зарплата!";
+        String d="Работу, чур, не предлагать.";
+        System.out.println("Мое любимое стихотворение:");
+        System.out.println(a+"\n"+b+"\n"+c+"\n"+d);
+    }
 }
