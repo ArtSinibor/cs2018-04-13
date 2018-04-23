@@ -25,7 +25,18 @@ package by.it.SInibor.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
-
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        int j = 1;
+        int sum = 1;
+        while (sum <= i) {
+            System.out.print(sum + ",");
+            j++;
+            sum = sum + j;
+        }
+    }
 }
