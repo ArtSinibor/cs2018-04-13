@@ -15,11 +15,11 @@ import java.util.ArrayList;
 public class TaskB1 {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
-        list.add("ONE1");
-        list.add("ONE2");
-        list.add("ONE3");
-        list.add("ONE4");
-        list.add("ONE5");
+        list.add("ONE 1");
+        list.add("TWO 2");
+        list.add("THR 3");
+        list.add("FOU 4");
+        list.add("FIV 5");
         System.out.println(list.size());
         for (String str : list) {
             System.out.println(str);
