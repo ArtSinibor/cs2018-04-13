@@ -1,5 +1,7 @@
 package by.it.SInibor.lesson04;
 
+import java.util.Scanner;
+
 /*
 
 На входе вводится число и месяц 2018 года.
@@ -25,7 +27,22 @@ package by.it.SInibor.lesson04;
 Вывод
 256
 
+31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
  */
 public class TaskC2 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int d = scan.nextInt();
+        int m = scan.nextInt();
+        System.out.println(mountNum(m) + d);
+    }
 
+    private static int mountNum(int m) {
+        int dm[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        int sum = 0;
+        for (int i = 0; i < m; i++) {
+            sum = sum + dm[i];
+        }
+        return sum;
+    }
 }
