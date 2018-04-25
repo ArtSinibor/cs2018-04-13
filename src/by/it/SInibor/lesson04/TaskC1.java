@@ -83,3 +83,29 @@ public class TaskC1 {
     }
 
 }
+/*
+if (oklad <300 || oklad >3000)
+sout(мы вам)
+else
+for (int month = 0; month <=14; month++){
+float pay=0;
+if (month >0 && <13)
+pay = oklad*1.5;
+if(month>5 $$ month <9)
+pay=oklad;
+swith (month) {
+case 1:sout("за январь начислено $"+pay); break;
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+case 9:
+case 10:
+case 12:
+default: sout("За месяц" + month + " начислено $" +pay); break;
+}
+if (pay = 666) break;
+ */

@@ -30,10 +30,9 @@ public class TaskB2 {
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
         int str = 0;
-        int stl;
         while (str != size) {
             str++;
-            for (stl=1; stl <= size; stl++) {
+            for (int stl=1; stl <= size; stl++) {
                 System.out.print((str*stl)+" ");
             }
             System.out.println();

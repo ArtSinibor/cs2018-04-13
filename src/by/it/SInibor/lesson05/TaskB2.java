@@ -20,6 +20,23 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 
 */
 
-public class TaskB2 {
+import java.util.Arrays;
+import java.util.Scanner;
 
+public class TaskB2 {
+    public static void main(String[] args) {
+        int[] arr = new int[20];
+        Scanner scan = new Scanner(System.in);
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = scan.nextInt();
+        }
+        int[] a = new int[10];
+        int[] b = new int[10];
+        for (int i = 0; i < a.length; i++) {
+            a[i]=arr[i];
+            b[i]=arr[i+10];
+        }
+        System.out.println("a=" + Arrays.toString(a));
+        System.out.println("b=" + Arrays.toString(b));
+    }
 }

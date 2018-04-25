@@ -1,5 +1,8 @@
 package by.it.SInibor.lesson05;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /*
 Создайте список строк.
 Вводите строки с клавиатуры, пока пользователь не введет слово END.
@@ -20,5 +23,14 @@ END
 
 */
 public class TaskA2 {
-
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        Scanner scan = new Scanner(System.in);
+        while (true) {
+            String str = scan.next();
+            if (str.equals("END")) break;
+            else list.add(str);
+        }
+        System.out.println(list);
+    }
 }

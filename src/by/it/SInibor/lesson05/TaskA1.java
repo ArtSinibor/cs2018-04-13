@@ -24,6 +24,17 @@ package by.it.SInibor.lesson05;
 */
 
 
-public class TaskA1 {
+import java.util.Scanner;
 
+public class TaskA1 {
+    public static void main(String[] args) {
+        int[] arr = new int[10];
+        Scanner scan = new Scanner(System.in);
+        for (int i = 9; i >= 0; i--) {
+            arr[i] = scan.nextInt();
+        }
+        for (int e : arr) {
+            System.out.println(e);
+        }
+    }
 }
