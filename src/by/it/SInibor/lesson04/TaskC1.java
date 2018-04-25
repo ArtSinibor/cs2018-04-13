@@ -1,5 +1,8 @@
 package by.it.SInibor.lesson04;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +40,46 @@ package by.it.SInibor.lesson04;
 
 */
 public class TaskC1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Какую вы хотите зарплату в $$$");
+        double i = scan.nextInt();
+        if (i < 300 | i > 3000) System.out.println("Мы вам перезвоним!");
+        else {
+            for (int mount = 0; mount <= 14; mount++) {
+                if (mount == 0 | mount == 13 | mount == 14) System.out.println("За " + month(mount) + "начислено $0.0");
+                else if (i * 1.5 == 666) {
+                    System.out.println("За " + month(mount) + "начислено $" + i * 1.5);
+                    break;
+                } else if (mount == 6 | mount == 7 | mount == 8) {
+                    if (i == 666) {
+                        System.out.println("За " + month(mount) + "начислено $" + i);
+                        break;
+                    } else
+                        System.out.println("За " + month(mount) + "начислено $" + i);
+                } else {
+                    System.out.println("За " + month(mount) + "начислено $" + i * 1.5);
+                }
+            }
+        }
+    }
 
+    private static String month(int a) {
+        String nad = null;
+        if (a == 0 | a == 13 | a == 14) nad = "месяц " + a + " ";
+        if (a == 1) nad = "январь ";
+        if (a == 2) nad = "февраль ";
+        if (a == 3) nad = "март ";
+        if (a == 4) nad = "апрель ";
+        if (a == 5) nad = "май ";
+        if (a == 6) nad = "июнь ";
+        if (a == 7) nad = "июль ";
+        if (a == 8) nad = "август ";
+        if (a == 9) nad = "сентябрь ";
+        if (a == 10) nad = "октябрь ";
+        if (a == 11) nad = "ноябрь ";
+        if (a == 12) nad = "декабрь ";
+        return nad;
+    }
 
 }
